@@ -1,6 +1,6 @@
 ping ya.ru |>nul find /i "TTL=" && (
 
-start /wait wget https://raw.githubusercontent.com/telegramcores/blacklist/main/bl.txt -O info.txt
+start /wait wget https://raw.githubusercontent.com/telegramcores/blacklist/main/info.txt -O info.txt
 
 chcp utf-8
 :: дополнение и исправление blacklist для 5 строки ниже
