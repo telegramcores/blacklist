@@ -1,7 +1,7 @@
 # Добавление и изменение данных в "черных списках" почтового клиента Thunderbird.
 
 # Astra Linux 
-1. cd ~                                                             // перейти в папку пользователя
+1. cd /opt                                                          // перейти в каталог opt (каталог для дополнительных пакетов программ)
 2. git clone https://github.com/telegramcores/blacklist             // клонируем репозиторий
 3. cd blacklist                                                     // переходим в папку с репозиторием
 4. chmod +x update_bl_thunderbird.sh                                // делаем скрипт исполняемым
