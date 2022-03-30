@@ -5,7 +5,12 @@ if "%~1"=="" (start "" "launch.vbs"&exit /b)
 
 Ping -n 2 1.1.1.1 2>nul|Find "TTL=">nul
 if %ERRORLEVEL% EQU 1 goto startTB
+
 start /wait wget https://raw.githubusercontent.com/telegramcores/blacklist/main/info.txt -O info.txt
+
+for %%i in (info.txt) do (set /a size=%%~Zi)
+if %size% == 0 goto startTB
+
 chcp 1251
 :: дополнение и исправление blacklist для 5 строки ниже
 for /F "delims=" %%i in (info.txt) do set bl="%%i"
